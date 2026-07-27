@@ -1,3 +1,1 @@
-﻿Console.WriteLine("A");
-Console.Write("B");
-Console.Write("C");
+﻿Console.WriteLine("Hello" + " world" + ". Osv...");
