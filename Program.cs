@@ -1,13 +1,20 @@
 ﻿// basic greeter app :)
-string greeting = "hello";
-string userName = "Patryk";
-int userAge = 46; 
-double userHeight = 1.85;
+string welcomeMessage = "Welcome, please enter your name.";
 
-// boolean type
-bool userIsOnline = true; // range is only: true or false
+// Write welcome message to user
+Console.WriteLine(welcomeMessage);
 
+// Read input from console, and store it in a variable
+string userName = Console.ReadLine();
 
-Console.WriteLine(greeting + " " + userName); 
-Console.WriteLine("You are " + userAge + " years old!"); 
-Console.WriteLine("You are " + userHeight + " meter(s) tall."); 
+// Greet the user by their name
+Console.WriteLine("Nice to meet you " + userName);
+
+// Ask user their age
+Console.WriteLine("Please enter your age");
+
+var userAge = Console.ReadLine();
+
+// Write to user how old they said they are...
+
+Console.WriteLine("You wrote that you are " + userAge + " years old.");
