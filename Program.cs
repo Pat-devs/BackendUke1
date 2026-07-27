@@ -1,25 +1,11 @@
-﻿// Output a string in the console
-Console.WriteLine("A string");
+﻿// Variables (in memory storage)
 
-// Combine multiple strings with the + operator
-Console.WriteLine("Hello" + " world" + ". Osv...");
+// create basic variable:
+var greeting = "hello";
+// 1. var is the "type"
+// 2. gretting is a name (we choose)
+// 3. and whatever comes after the = sign is the value we assign it to
 
-// Print a string (that has a number)
-Console.WriteLine("2");
-// Print a number (an actual integer)
-Console.WriteLine(2);
 
-// String concatention:
-Console.WriteLine("2" + 2);
-// Also string concatention: 
-Console.WriteLine("2" + "2");
 
-// Math: addition
-Console.WriteLine(2 + 2);
-// Math: substraction
-Console.WriteLine(5 - 2);
-// Math: multiplication
-Console.WriteLine(5 * 3);
-// Math: division
-Console.WriteLine(10 / 2);
-
+Console.WriteLine(greeting); // WriteLine needs a "value"
