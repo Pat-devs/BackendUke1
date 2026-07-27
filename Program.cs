@@ -1,11 +1,13 @@
-﻿// Variables (in memory storage)
+﻿// basic greeter app :)
+string greeting = "hello";
+string userName = "Patryk";
+int userAge = 46; 
+double userHeight = 1.85;
 
-// create basic variable:
-var greeting = "hello";
-// 1. var is the "type"
-// 2. gretting is a name (we choose)
-// 3. and whatever comes after the = sign is the value we assign it to
+// boolean type
+bool userIsOnline = true; // range is only: true or false
 
 
-
-Console.WriteLine(greeting); // WriteLine needs a "value"
+Console.WriteLine(greeting + " " + userName); 
+Console.WriteLine("You are " + userAge + " years old!"); 
+Console.WriteLine("You are " + userHeight + " meter(s) tall."); 
