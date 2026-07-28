@@ -1,27 +1,28 @@
-﻿int luckyNumber = 1;
+﻿// Pizza division for friends
 
-Console.WriteLine("Lucky number is now " + luckyNumber); // 1
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2); // % is the modulo operator (also known as remainder after division operator)
+int totalSlices = 15;
+int friends = 4;
 
-luckyNumber++;
+Console.WriteLine("We have " + totalSlices + " slices of pizza and " + friends + " friends.");
 
-Console.WriteLine("Lucky number is now " + luckyNumber); // 2
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
-luckyNumber++;
+// Try to split the slices equally
+int slicesPerPerson = totalSlices / friends;
 
-Console.WriteLine("Lucky number is now " + luckyNumber);
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
-luckyNumber++;
+Console.WriteLine("Each friend gets: " + slicesPerPerson + " slices.");
 
-Console.WriteLine("Lucky number is now " + luckyNumber);
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
+// Whats leftover ?
 
-luckyNumber++;
+// Console.WriteLine(slicesPerPerson * friends);
 
-Console.WriteLine("Lucky number is now " + luckyNumber);
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
+int leftOverSlices = totalSlices - (slicesPerPerson * friends);
+Console.WriteLine("We have " + leftOverSlices + " slices left. :)");
 
-luckyNumber++;
+// Another way to calculate leftover...
 
-Console.WriteLine("Lucky number is now " + luckyNumber);
-Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
+int leftOverSlicesV2 = totalSlices % friends;
+
+Console.WriteLine("We have " + leftOverSlicesV2 + " slices left. :)");
+
+int leftOverSlicesV3 = totalSlices % slicesPerPerson; // this one cuts off the leftover (because of the way int slicesPerPerson = totalSlices / friends; is calculated )
+
+Console.WriteLine("We have " + leftOverSlicesV3 + " slices left. :)");
