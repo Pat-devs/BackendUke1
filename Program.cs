@@ -1,24 +1,27 @@
-﻿// basic greeter app :)
-string welcomeMessage = "Welcome, please enter your name.";
+﻿int luckyNumber = 1;
 
-// Write welcome message to user
-Console.WriteLine(welcomeMessage);
+Console.WriteLine("Lucky number is now " + luckyNumber); // 1
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2); // % is the modulo operator (also known as remainder after division operator)
 
-// Read input from console, and store it in a variable
-string userName = Console.ReadLine();
+luckyNumber++;
 
-// Greet the user by their name
-Console.WriteLine("Nice to meet you " + userName);
+Console.WriteLine("Lucky number is now " + luckyNumber); // 2
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
+luckyNumber++;
 
-// Ask user their age
-Console.WriteLine("Please enter your age");
+Console.WriteLine("Lucky number is now " + luckyNumber);
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
+luckyNumber++;
 
-// read the input, and parse it into an integer
-int userAge = int.Parse(Console.ReadLine()); 
+Console.WriteLine("Lucky number is now " + luckyNumber);
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
 
-// Write to the user how old they will be in one year time from now
+luckyNumber++;
 
-// int ageAfter20years = userAge + 20;
-userAge++; // userAge += 1; // userAge = userAge + 1;
+Console.WriteLine("Lucky number is now " + luckyNumber);
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
 
-Console.WriteLine("Next year, you will be " + userAge + " years old.");
+luckyNumber++;
+
+Console.WriteLine("Lucky number is now " + luckyNumber);
+Console.WriteLine("Remainder after mod operation: " + luckyNumber % 2);
