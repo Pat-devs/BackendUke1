@@ -12,4 +12,8 @@ Console.WriteLine("Enter the second number: ");
 int secondNumber = int.Parse(Console.ReadLine());
 
 // Show the numbers as a sum equation, and the result
-Console.WriteLine(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+int sumResult = firstNumber + secondNumber;
+
+Console.WriteLine(firstNumber + " + " + secondNumber + " = " + firstNumber + secondNumber);
+
+Console.WriteLine($"{firstNumber} + {secondNumber} = {sumResult}");       
