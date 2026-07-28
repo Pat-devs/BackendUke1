@@ -16,9 +16,9 @@ Console.WriteLine("Please enter your age");
 // read the input, and parse it into an integer
 int userAge = int.Parse(Console.ReadLine()); 
 
-// Write to the user how old they will be in 20 years time from now
+// Write to the user how old they will be in one year time from now
 
 // int ageAfter20years = userAge + 20;
-userAge += 20; // userAge = userAge + 20;
+userAge++; // userAge += 1; // userAge = userAge + 1;
 
-Console.WriteLine("20 years from now, you will be " + userAge + " years old.");
+Console.WriteLine("Next year, you will be " + userAge + " years old.");
