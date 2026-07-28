@@ -13,8 +13,8 @@ Console.WriteLine("Nice to meet you " + userName);
 // Ask user their age
 Console.WriteLine("Please enter your age");
 
-var userInputAge = Console.ReadLine(); // read the input, and store as a variable
-int userAge = int.Parse(userInputAge); // convert the input into an int
+// read the input, and parse it into an integer
+int userAge = int.Parse(Console.ReadLine()); 
 
 // Write to user how old they said they are...
 
