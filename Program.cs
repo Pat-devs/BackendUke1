@@ -1,41 +1,39 @@
 ﻿Console.Clear();
 
-// advanced greeret program
 
-// user enters a number between 0-23 (hour of the day)
-// then the user will be greeted with:
-// Good morning if the hour is between 6 and 11
-// Good afternoon if the hour is between 12 and 17
-// Good evening if the hour is betweeen 18 and 21
-// In all other cases say good night (22,23 og 0,1,2,3,4,5)
+// conditionals
 
-Console.WriteLine("Enter a number between 0-23");
-// prompt user for input
-int hour = int.Parse(Console.ReadLine());
+// 1. if - elseif - else
 
-// 1. check if user entered a number between 0-23
-if (hour >= 0 && hour <= 23)
+/*
+if (condition) 
 {
-    // check if its morning?
-    if (hour >= 6 && hour <= 11)
-    {
-        Console.WriteLine("Good morning!");
-    }
-    else if (hour <= 17) // since we already know the hour is above 12 (due to hour <= 11 in the above if) we can just check if the hour is below/equal to 17
-    {
-        Console.WriteLine("Good afternoon!");
-    }
-    else if (hour <= 21)
-    {
-        Console.WriteLine("Good evening!");
-    }
-    else // we can safely assume her that the hour is above 21 and below 6
-    {
-        Console.WriteLine("Good night");
-    }
-
+    do something
 }
-else
+else if (some other condition)
 {
-    Console.WriteLine("You entered invalid time!");
+    do something else
 }
+else 
+{
+    in all other cases dont do any of the above but do this instead
+}
+*/
+
+
+// 2. switch
+
+int age = 18;
+
+// check if user is an adult ??
+switch (age)
+{
+    case >= 18: // check if value (age) is above 18
+        Console.WriteLine("User is an adult"); // do something
+        break; // terminate the switch
+    default:
+        Console.WriteLine("User is not an adult");
+        break;
+}
+
+
