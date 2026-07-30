@@ -2,15 +2,15 @@
 
 // check if user is online
 
-bool isUserOnline = false;
-int age = 25;
+int age = 45;
 
-// check if user is an adult (18+) AND is online
-if (age > 17 && isUserOnline)
+// check if user is between 18 and 40 years old
+
+if (age >= 18 && age <= 40)
 {
-    Console.WriteLine("user is an adult and is online!");
+    Console.WriteLine("user is between 18 and 40 years old");
 }
 else
 {
-    Console.WriteLine("user is either under 18 years old or they are offline!");
+    Console.WriteLine("user is outside of the 18 to 40 years old range");
 }
