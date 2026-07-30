@@ -1,14 +1,16 @@
 ﻿Console.Clear();
 
-// most basic condition
+// check if user is online
 
-if (2 != 2)
+bool isUserOnline = false;
+int age = 25;
+
+// check if user is an adult (18+) AND is online
+if (age > 17 && isUserOnline)
 {
-    // code only runs if above condition is true
-    Console.WriteLine("Yes the condition was truthy, so i will show you this text.");
+    Console.WriteLine("user is an adult and is online!");
 }
-else 
+else
 {
-    // code only runs if above condition is false
-    Console.WriteLine("Nope, the condition was false, so i will show you this text from the else block :)");
+    Console.WriteLine("user is either under 18 years old or they are offline!");
 }
