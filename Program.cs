@@ -23,7 +23,18 @@ if (hour >= 0 && hour <= 23)
     {
         Console.WriteLine("Good morning!");
     }
-
+    else if (hour >= 12 && hour <= 17)
+    {
+        Console.WriteLine("Good afternoon!");
+    }
+    else if (hour >= 18 && hour <= 21)
+    {
+        Console.WriteLine("Good evening!");
+    }
+    else // we can safely assume her that the hour is above 21 and below 6
+    {
+        Console.WriteLine("Good night");
+    }
 
 }
 else
