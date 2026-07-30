@@ -7,7 +7,7 @@
 // Good morning if the hour is between 6 and 11
 // Good afternoon if the hour is between 12 and 17
 // Good evening if the hour is betweeen 18 and 21
-// In all other cases say good night
+// In all other cases say good night (22,23 og 0,1,2,3,4,5)
 
 Console.WriteLine("Enter a number between 0-23");
 // prompt user for input
@@ -16,18 +16,16 @@ int hour = int.Parse(Console.ReadLine());
 // 1. check if user entered a number between 0-23
 if (hour >= 0 && hour <= 23)
 {
-    // here we know hour is between 0-23
-
     // check if its morning?
     if (hour >= 6 && hour <= 11)
     {
         Console.WriteLine("Good morning!");
     }
-    else if (hour >= 12 && hour <= 17)
+    else if (hour <= 17) // since we already know the hour is above 12 (due to hour <= 11 in the above if) we can just check if the hour is below/equal to 17
     {
         Console.WriteLine("Good afternoon!");
     }
-    else if (hour >= 18 && hour <= 21)
+    else if (hour <= 21)
     {
         Console.WriteLine("Good evening!");
     }
