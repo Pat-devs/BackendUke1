@@ -1,16 +1,32 @@
 ﻿Console.Clear();
 
-// check if user is online
+// advanced greeret program
 
-int luckyNumber = 3;
+// user enters a number between 0-23 (hour of the day)
+// then the user will be greeted with:
+// Good morning if the hour is between 6 and 11
+// Good afternoon if the hour is between 12 and 17
+// Good evening if the hour is betweeen 18 and 21
+// In all other cases say good night
 
-// print odd of the number is odd, or even if the number is even
+Console.WriteLine("Enter a number between 0-23");
+// prompt user for input
+int hour = int.Parse(Console.ReadLine());
 
-if (luckyNumber % 2 == 0)
+// 1. check if user entered a number between 0-23
+if (hour >= 0 && hour <= 23)
 {
-    Console.WriteLine("The number is even!");
+    // here we know hour is between 0-23
+
+    // check if its morning?
+    if (hour >= 6 && hour <= 11)
+    {
+        Console.WriteLine("Good morning!");
+    }
+
+
 }
 else
 {
-    Console.WriteLine("The number is odd!");
+    Console.WriteLine("You entered invalid time!");
 }
