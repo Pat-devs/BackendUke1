@@ -13,31 +13,23 @@ Console.WriteLine("Enter a number between 0-23");
 // prompt user for input
 int hour = int.Parse(Console.ReadLine());
 
-// 1. check if user entered a number between 0-23
-if (hour >= 0 && hour <= 23)
+switch (hour)
 {
-
-    switch (hour)
-    {
-        case >= 6 and <= 11: // && in if is "and" in a switch
-            Console.WriteLine("Good morning!");
-            break;
-        case >= 12 and <= 17:
-            Console.WriteLine("Good afternoon!"); 
-            break;
-        case >= 18 and <= 21:
-            Console.WriteLine("Good evening!");
-            break;
-        default:
-            Console.WriteLine("Good night");
-            break;
-        
-    }
-
-}
-else
-{
-    Console.WriteLine("You entered invalid time!");
+    case >= 6 and <= 11: // && in if is "and" in a switch
+        Console.WriteLine("Good morning!");
+        break;
+    case >= 12 and <= 17:
+        Console.WriteLine("Good afternoon!"); 
+        break;
+    case >= 18 and <= 21:
+        Console.WriteLine("Good evening!");
+        break;
+    case >= 0 and <= 5 or >= 22 and <= 23:
+        Console.WriteLine("Good night");
+        break;
+    default:
+        Console.WriteLine("You entered invalid time!");
+        break;
 }
 
 
