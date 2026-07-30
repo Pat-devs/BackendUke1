@@ -2,15 +2,15 @@
 
 // check if user is online
 
-int age = 45;
+int luckyNumber = 3;
 
-// check if user is between 18 and 40 years old
+// print odd of the number is odd, or even if the number is even
 
-if (age >= 18 && age <= 40)
+if (luckyNumber % 2 == 0)
 {
-    Console.WriteLine("user is between 18 and 40 years old");
+    Console.WriteLine("The number is even!");
 }
 else
 {
-    Console.WriteLine("user is outside of the 18 to 40 years old range");
+    Console.WriteLine("The number is odd!");
 }
