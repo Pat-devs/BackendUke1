@@ -1,32 +1,30 @@
-﻿// super simplified calculator
-// features: can receive two numbers, and show:
-// sum, substraction, multiplication and division.
+﻿Console.Clear();
 
-Console.Clear();
-Console.WriteLine("Welcome to super simple calculator!");
+{
+    string user = "Patryk";
+}
 
-Console.WriteLine("Enter the first number: ");
-int firstNumber = int.Parse(Console.ReadLine());
+{
+    string user = "Bob";
+    //Console.WriteLine(user);
+}
 
-Console.WriteLine("Enter the second number: ");
-int secondNumber = int.Parse(Console.ReadLine());
+// == is the comparison operator
+Console.WriteLine(2 == 2); // true
+Console.WriteLine(2 == 3); // false
 
-// Show the numbers as a sum equation, and the result
-int sumResult = firstNumber + secondNumber;
+Console.WriteLine(2 > 3); // false because 2 is not larger than 3
+Console.WriteLine(2 > 1); // true because 2 is larger than 1
 
-Console.WriteLine($"{firstNumber} + {secondNumber} = {sumResult}");       
+Console.WriteLine(5 >= 4); // larger or equal to something
+Console.WriteLine(5 >= 5); // larger or equal to something
+Console.WriteLine(4 >= 5); // larger or equal to something
 
-// Show the numbers as a substraction equation, and the result
-int subResult = firstNumber - secondNumber;
+Console.WriteLine(5 <= 4); // less or equal to something
+Console.WriteLine(5 <= 5); // less or equal to something
+Console.WriteLine(4 <= 5); // less or equal to something
 
-Console.WriteLine($"{firstNumber} - {secondNumber} = {subResult}");   
+// not equal
+Console.WriteLine(2 != 2); // is two not equal to two ? False
+Console.WriteLine(2 != 3); // is two not equal to two ? True
 
-// Show the numbers as a multiplication equation, and the result
-int mulResult = firstNumber * secondNumber;
-
-Console.WriteLine($"{firstNumber} * {secondNumber} = {mulResult}");   
-
-// Show the numbers as a division equation, and the result
-double divResult = (double)firstNumber / secondNumber;
-
-Console.WriteLine($"{firstNumber} / {secondNumber} = {divResult}");  
